@@ -1,7 +1,7 @@
 export default function Home() {
 
   const handlePay = async () => {
-    const res = await fetch("/api/paystack/initiate", {
+    const res = await fetch("/api/paystack/initialize", {
       method: "POST",
     });
 
