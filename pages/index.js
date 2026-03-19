@@ -44,4 +44,12 @@ export default function Home() {
       </div>
     </div>
   );
+const handlePay = async () => {
+  const res = await fetch("/api/paystack/initiate", {
+    method: "POST",
+  });
+
+  const data = await res.json();
+  window.location.href = data.authorization_url;
+};
 }
