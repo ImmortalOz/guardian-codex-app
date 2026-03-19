@@ -40,9 +40,6 @@ export default function Home() {
           }}>
             Begin Journey
           </button>
-<button onClick={handlePay}>
-  Unlock Stage 2
-</button>
         </a>
       </div>
     </div>
